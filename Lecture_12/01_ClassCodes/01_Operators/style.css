@@ -1,0 +1,14 @@
+.javascript-operators-wrapper {
+	width: 100vw;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: flex-start;
+	background-color: #98fffff9;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.result_group {
+	display: flex;
+}
