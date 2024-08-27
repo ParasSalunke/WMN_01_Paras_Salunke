@@ -1,0 +1,9 @@
+/* This class represents a wrapper element */
+.wrapper {
+    width: 100vw; /* Set the width to 100% of the viewport width */
+    min-height: 100vh; /* Set the minimum height to 100% of the viewport height */
+    display: flex; /* Use flexbox for layout */
+    flex-direction: column; /* Arrange child elements in a column */
+    align-items: center; /* Center child elements horizontally */
+    justify-content: center; /* Center child elements vertically */
+}
