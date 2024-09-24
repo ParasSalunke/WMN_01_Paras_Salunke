@@ -1,0 +1,434 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* Global styles for body */
+body {
+    background-color: 021526;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+
+/* Universal selector for resetting margin, padding, and box-sizing */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles for list items and anchor tags */
+li,
+a {
+    font-weight: 500;
+    font-size: 16px;
+    color: #E2E2B6;
+    text-decoration: none;
+}
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10% 1px 10%;
+    position: -webkit-sticky;
+    position: sticky;
+    background-color: rgba(2, 21, 38, 0.8); 
+    backdrop-filter: blur(10px); 
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo styles */
+.logo {
+    cursor: pointer;
+    margin-right: auto;
+    max-height: 50px;
+    /* height: 45px;
+    width: 45px; */
+    transform: translate(-20px, -10px);
+}
+
+/* Contact info styles */
+.contact-info {
+    align-self: flex-start;
+    margin-bottom: 10px;
+}
+
+/* Paragraph styles within contact info */
+.contact-info p {
+    margin: 0;
+}
+
+/* Navigation links styles */
+.nav-links {
+    transform: translate(-20px, -10px);
+    list-style: none;
+}
+
+/* List item styles within navigation links */
+.nav-links li {
+    display: inline-block;
+    padding: 0px 20px;
+    transform: translateY(-10px);
+}
+
+/* Anchor tag styles within navigation links */
+.nav-links li a {
+    transition: all 0.3s ease 0s;
+}
+
+/* Hover effect for anchor tags within navigation links */
+.nav-links li a:hover {
+    color: #6EACDA;
+}
+
+/* Profile container styles */
+.profile-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+/* Profile image styles */
+.profile-img {
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    transform: translate(10px, -10px);
+}
+
+/* Cart icon styles */
+.cart-icon {
+    transform: translate(10px, -10px);
+    margin-left: 20px;
+}
+
+/* Icon styles within cart icon */
+.cart-icon i {
+    font-size: 30px;
+    color: #E2E2B6;
+    cursor: pointer;
+}
+
+/* Hover effect for icons within cart icon */
+.cart-icon i:hover {
+    color: #6EACDA;
+}
+
+/* Modal styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Modal content styles */
+.modal-content {
+    background-color: #03346E;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+/* Heading styles within modal content */
+.modal-content h2 {
+    color: #E2E2B6;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+/* Close button styles */
+.close {
+    color: #E2E2B6;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+/* Hover and focus effects for close button */
+.close:hover,
+.close:focus {
+    color: #6EACDA;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Remove button styles */
+.remove-button {
+    margin-left: 10px;
+    color: red;
+    cursor: pointer;
+}
+
+/* Dropdown menu styles */
+.dropdown-menu {
+    margin-top: 5px;
+    width: 150px;
+    white-space: nowrap;
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #E2E2B6;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    opacity: 0;
+    visibility: hidden;
+    border: 1px solid #000000;
+}
+
+/* Anchor tag styles within dropdown menu */
+.dropdown-menu a {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #03346E;
+}
+
+/* Hover effect for anchor tags within dropdown menu */
+.dropdown-menu a:hover {
+    color: #021526;
+}
+
+/* Icon styles within dropdown menu */
+.dropdown-menu i {
+    padding: 5px;
+    margin-right: 8px;
+}
+
+/* Hover effect for profile container to show dropdown menu */
+.profile-container:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+/* Title container styles */
+.title-containter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+/* Heading styles within title container */
+.title-containter h1 {
+    padding-top: 20px;
+    color: #40A2D8;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    margin-bottom: 20px;
+}
+
+/* Paragraph styles within title container */
+.title-containter p {
+    color: #E2E2B6;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+/* Button styles */
+.btn {
+    background-color: #03346E;
+    border: none;
+    color: #E2E2B6;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font: bold 10px 'Roboto', sans-serif;
+    font-size: 18px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover effect for buttons */
+.btn:hover {
+    background-color: #0454A6;
+}
+
+/* Card container styles */
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Card styles */
+.card {
+    cursor: pointer;
+    flex: 1 1 1 calc(33.333% - 1em);
+    margin: 0.6em;
+    border-radius: 10px;
+    width: 350px;
+    height: 370px;
+    padding: .8em;
+    background: #E2E2B6;
+    position: relative;
+    overflow: visible;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for cards */
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+/* Card image styles */
+.card-img {
+    cursor: pointer;
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+    border-radius: .5rem;
+}
+
+/* Card info styles */
+.card-info {
+    padding-top: 10%;
+}
+
+/* Icon styles within card button */
+.card-button i {
+    color: #16325B;
+    font-size: 25px;
+}
+
+/* Card footer styles */
+.card-footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+/* Text title styles */
+.text-title {
+    color: #021526;
+    font-weight: 900;
+    font-size: 1.2em;
+    line-height: 1.5;
+}
+
+/* Text body styles */
+.text-body {
+    color: #000000;
+    font-size: .9em;
+    padding-bottom: 10px;
+}
+
+/* Card button styles */
+.card-button {
+    border: 1px solid #021526;
+    display: flex;
+    padding: .7em;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: .3s ease-in-out;
+}
+
+/* Hover effect for card buttons */
+.card-button:hover {
+    border: 1px solid #021526;
+    background-color: #6EACDA;
+}
+
+/* Footer styles */
+footer {
+    margin-top: 50px;
+    padding: 20px 0;
+}
+
+/* Footer container styles */
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Footer logo styles */
+.footer-logo img {
+    max-height: 40px;
+}
+
+/* Footer links styles */
+.footer-links a {
+    color: #E2E2B6;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: all 0.3s ease 0s;
+}
+
+/* Hover effect for footer links */
+.footer-links a:hover {
+    color: #6EACDA;
+    text-decoration: none;
+}
+
+/* Footer social media links styles */
+.footer-social a {
+    color: #fff;
+    margin: 0 10px;
+    font-size: 20px;
+    transition: all 0.3s ease 0s;
+}
+
+/* Hover effect for footer social media links */
+.footer-social a:hover {
+    color: #6EACDA;
+}
+
+/* Media query for screens with max width of 768px */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-logo {
+        margin-bottom: 20px;
+    }
+
+    .footer-links {
+        margin-bottom: 20px;
+    }
+
+    .footer-social a {
+        margin: 20px 5px;
+    }
+}

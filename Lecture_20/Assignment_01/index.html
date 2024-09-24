@@ -1,0 +1,241 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./input.css" />
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <title>Marshalling Void</title>
+</head>
+
+<body>
+    <header>
+        <a href="/">
+            <img class="logo" src="./images/image.png" alt="logo" />
+        </a>
+
+        <nav>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="#">Cources</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="profile-container">
+
+            <img class="profile-img" title="Profile" src="./images/profile.png" alt="profile" />
+
+            <div class="cart-icon">
+                <a href="#" id="cart-icon" title="Cart"><i class="bi bi-cart"></i><span id="cart-count">0</span></a>
+            </div>
+
+            <div id="cart-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <h2>Your Cart</h2>
+                    <ul id="cart-items"></ul>
+                </div>
+            </div>
+
+            <div class="dropdown-menu">
+                <a href="#"> <i class="bi bi-person-circle"></i>Profile</a>
+                <a href="/"> <i class="bi bi-house"></i>Home</a>
+                <a href="#"> <i class="bi bi-book"></i>Cources</a>
+                <a href="#"> <i class="bi bi-info-circle"></i>About</a>
+                <a href="#"> <i class="bi bi-envelope"></i>Contact</a>
+                <a href="#"> <i class="bi bi-gear"></i>Settings</a>
+                <a href="#"> <i class="bi bi-question-circle"></i>Help</a>
+                <a href="#"> <i class="bi bi-box-arrow-up-right"></i>Sign Up</a>
+                <a href="#"> <i class="bi bi-box-arrow-left"></i>Sign Out</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="title-containter">
+            <h1>ABCD - Always Be Code Digger</h1>
+            <br>
+            <p>Learn to code with us and get your dream job</p>
+            <br>
+            <button class="btn">Get Started</button>
+            <br>
+            <h1>Latest Cources</h1>
+        </div>
+
+        <div class="card-container">
+            <div class="card">
+                <img class="card-img" src="./images//product/mean.png" alt="Product">
+                <div class="card-info">
+                    <p class="text-title">MEAN Stack Development Course </p>
+                    <p class="text-body">Learn how to build a full-stack web application using Angular, Node.js, Express
+                        and MongoDB</p>
+                </div>
+                <div class="card-footer">
+                    <span class="text-title"><del>₹1999</del> ₹1499 </span>
+                    <div class="card-button">
+                        <i class="bi bi-cart add-to-cart" data-course-name="MEAN Stack Development Course"
+                            data-course-price="1499"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-img" src="./images/product/mern.png" alt="Product">
+                <div class="card-info">
+                    <p class="text-title">MERN Stack Development Course</p>
+                    <p class="text-body">Learn how to build a full-stack web application using Angular, Node.js, Express
+                        and MongoDB</p>
+                </div>
+                <div class="card-footer">
+                    <span class="text-title"><del>₹2499</del> ₹1999</span>
+                    <div class="card-button">
+                        <i class="bi bi-cart add-to-cart" data-course-name="MERN Stack Development Course"
+                            data-course-price="1999"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-img" src="./images//product/react.png" alt="Product">
+                <div class="card-info">
+                    <p class="text-title">React Js Full Course</p>
+                    <p class="text-body">Learn how to build dynamic user interfaces using React.js, a popular JavaScript
+                        library</p>
+                </div>
+                <div class="card-footer">
+                    <span class="text-title"><del>₹1499</del> ₹999</span>
+                    <div class="card-button">
+                        <i class="bi bi-cart add-to-cart" data-course-name="React Js Full Course"
+                            data-course-price="999"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-img" src="./images//product/python.png" alt="Product">
+                <div class="card-info">
+                    <p class="text-title">Python Full Stack Course</p>
+                    <p class="text-body">Learn how to build web applications using Python and Django, the most popular
+                        web frameworks</p>
+                </div>
+                <div class="card-footer">
+                    <span class="text-title"><del>₹2999</del> ₹2499</span>
+                    <div class="card-button">
+                        <i class="bi bi-cart add-to-cart" data-course-name="Python Full Stack Course"
+                            data-course-price="2499"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-img" src="./images//product/java.png" alt="Product">
+                <div class="card-info">
+                    <p class="text-title">Java Full Stack Course</p>
+                    <p class="text-body">Learn how to build web applications using Java and Spring, the most popular web
+                        frameworks</p>
+                </div>
+                <div class="card-footer">
+                    <span class="text-title"><del>₹2899</del> ₹2399</span>
+                    <div class="card-button">
+                        <i class="bi bi-cart add-to-cart" data-course-name="Java Full Stack Course"
+                            data-course-price="2399"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-img" src="./images//product/c++.png" alt="Product">
+                <div class="card-info">
+                    <p class="text-title">C++ Full Stack Course</p>
+                    <p class="text-body">Learn how to build web applications using C++ and Qt, the most popular web
+                        frameworks</p>
+                </div>
+                <div class="card-footer">
+                    <span class="text-title"><del>₹3999</del> ₹3499</span>
+                    <div class="card-button">
+                        <i class="bi bi-cart add-to-cart" data-course-name="C++ Full Stack Course"
+                            data-course-price="3499"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-img" src="./images//product/htmlcss.png" alt="Product">
+                <div class="card-info">
+                    <p class="text-title">HTML & CSS Full Stack Course</p>
+                    <p class="text-body">Learn how to build web applications using HTML & CSS, the most popular web
+                        frameworks</p>
+                </div>
+                <div class="card-footer">
+                    <span class="text-title"><del>₹1499</del> ₹999</span>
+                    <div class="card-button">
+                        <i class="bi bi-cart add-to-cart" data-course-name="HTML & CSS Full Stack Course"
+                            data-course-price="999"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-img" src="./images//product/javascript.png" alt="Product">
+                <div class="card-info">
+                    <p class="text-title">JavaScript Full Stack Course</p>
+                    <p class="text-body">Learn how to build web applications using JavaScript, the most popular web
+                        frameworks</p>
+                </div>
+                <div class="card-footer">
+                    <span class="text-title"><del>₹2499</del> ₹1999</span>
+                    <div class="card-button">
+                        <i class="bi bi-cart add-to-cart" data-course-name="JavaScript Full Stack Course"
+                            data-course-price="1999"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img class="card-img" src="./images//product/golang.png" alt="Product">
+                <div class="card-info">
+                    <p class="text-title">Go Lang Full Stack Course</p>
+                    <p class="text-body">Learn how to build web applications using Go Lang, the most popular web
+                        frameworks</p>
+                </div>
+                <div class="card-footer">
+                    <span class="text-title"><del>₹5999</del> ₹4999</span>
+                    <div class="card-button">
+                        <i class="bi bi-cart add-to-cart" data-course-name="Go Lang Full Stack Course"
+                            data-course-price="4999"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="./images/image.png" alt="logo" />
+            </div>
+            <div class="footer-links">
+                <a href="#">Home</a>
+                <a href="#">Courses</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+
+            <div class="footer-social">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-twitter"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
