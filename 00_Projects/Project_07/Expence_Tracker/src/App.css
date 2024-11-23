@@ -1,0 +1,73 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+}
+
+.app {
+  text-align: center;
+  padding: 2rem;
+}
+
+h1 {
+  color: #333;
+}
+
+.expense-form {
+  margin-bottom: 1.5rem;
+}
+
+.expense-form input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  margin-right: 0.5rem;
+}
+
+.expense-form button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.expense-list {
+  max-width: 400px;
+  margin: 0 auto;
+  background: white;
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.expense-item span {
+  font-size: 1rem;
+}
+
+.delete-btn {
+  background: #ff4d4f;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 0.25rem 0.5rem;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  background: #d9363e;
+}
+
+p {
+  font-size: 1rem;
+  color: #666;
+}
